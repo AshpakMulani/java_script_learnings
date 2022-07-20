@@ -5,4 +5,4 @@ Weather App which can search different cities and show weather data with the hel
 
 Weather App which can search different cities and show weather data with the help of backend API
 
-![image](Screenshot.png)
+![image](./Screenshot.PNG)
