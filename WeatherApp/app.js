@@ -1,27 +1,14 @@
 
 let getWeather = async(location) => {
-const API_KEY = 'eb71cfa3bd3641699dd194037221907';
-let LOCATION = location;
-let API_URL = "http://api.weatherapi.com/v1/current.json?key=" + API_KEY + "&q=" + LOCATION +"&aqi=yes";
+    const API_KEY = 'eb71cfa3bd3641699dd194037221907';
+    let LOCATION = location;
+    let API_URL = "http://api.weatherapi.com/v1/current.json?key=" + API_KEY + "&q=" + LOCATION +"&aqi=yes";
 
-return await fetch(API_URL);
-
+    return await fetch(API_URL);
 };
 
 
 let displayWeather = (data) => {   
-/*
-    if ('error' in data){
-        document.querySelector(".weather-details").style.visibility = "hidden";
-        document.querySelector(".weather-error").style.visibility = "visible";
-
-    }
-    else
-    {
-
-        document.querySelector(".weather-details").style.visibility = "visible";
-        document.querySelector(".weather-error").style.visibility = "hidden";
-*/
         try{
         const {name, country, localtime } = data.location;
         const {temp_c, is_day, condition,
@@ -30,13 +17,12 @@ let displayWeather = (data) => {
         document.querySelector(".location-name").innerText = name;
         document.querySelector(".location-time").innerText = localtime;
         document.querySelector(".location-country").innerText = country;
-        document.querySelector(".condition-text").innerText = condition.text;
+        document.querySelector(".condition-text h2").innerText = condition.text;
         document.querySelector(".condition-icon").src = "https:" + condition.icon;
-        document.querySelector(".others-wind_kph").innerText = wind_kph;
-        document.querySelector(".others-humidity").innerText = humidity;
-        document.querySelector(".others-uv").innerText = uv;     
-        document.querySelector(".weather-details").style.visibility = "visible"; 
-        
+        document.querySelector(".others-wind_kph h1").innerText = wind_kph;
+        document.querySelector(".others-humidity h1").innerText = humidity;
+        document.querySelector(".others-uv h1").innerText = uv;     
+        document.querySelector(".weather-details").style.visibility = "visible";         
         
         }
         catch(e){
@@ -66,8 +52,6 @@ let search = () => {
 document.querySelector(".search-bar button").addEventListener("click",() => { search() });
 document.querySelector(".search-bar input").addEventListener('keypress', 
                     function (e) { if (e.key === 'Enter') {  search()  } });
-
-
 
 
 (async function(){

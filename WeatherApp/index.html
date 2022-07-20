@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
     <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
  
@@ -28,19 +31,31 @@
                 </div>
 
                 <div class="condition">
-                    <div class="condition-text">-</div>
                     <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="condition-icon" />
+                    <div class="condition-text">
+                        <h2>-</h2>
+                    </div>
+                    
                 </div>
 
                 <div class="others">
-                    <div class="others-wind_kph">-</div>
-                    <div class="others-humidity">-</div>
-                    <div class="others-uv">-</div>                    
+                    <div class="others-wind_kph">
+                        <h1>-</h1>
+                        <p>Wind</p>
+                    </div>
+                    <div class="others-humidity">
+                        <h1>-</h1>
+                        <p>Humidity</p>
+                    </div>
+                    <div class="others-uv">
+                        <h1>-</h1>
+                        <p>UV</p>
+                    </div>                    
                 </div>            
         </div>
 
         <div class="weather-details-error">
-            <h2>error occured while getting data..!!</h2>
+            <h2>error occured !!!</h2>
         </div>
         
        
