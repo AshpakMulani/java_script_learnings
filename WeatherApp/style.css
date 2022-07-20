@@ -1,0 +1,32 @@
+.weather-details {
+    visibility: visible;
+}
+
+.weather-error {
+    visibility: hidden;    
+    color: red; 
+}
+
+
+.weather-details.loading{
+    visibility: hidden;  
+    max-height: 20px;
+    position: relative;
+}
+
+
+.weather-details.loading::after{
+    visibility: visible;
+    content: "loading...";
+    color: rebeccapurple;
+    position: absolute;
+    top: 0;
+}
+
+
+.weather-details-error{
+    visibility: hidden;  
+    max-height: 20px;
+    position: relative;
+}
+
