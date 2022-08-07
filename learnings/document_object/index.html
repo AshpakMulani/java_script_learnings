@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="getBoundingClientRect">
+            <h2>Visibility animation using getBoundingClientRect</h2>
+            <div id="zero_container_id" class="zeroth_container hide">            
+                <img src="https://source.unsplash.com/random/?darkness" alt="forest">
+                <p>
+                    zeroth : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices viverra tortor, eu consequat urna porta nec. Duis risus lorem, blandit sed nulla non, consequat porta justo. Nulla feugiat vulputate sagittis. Aliquam vel odio enim. Donec id maximus ante, nec vestibulum urna. Nulla pulvinar iaculis nibh, in vestibulum neque commodo ac. Fusce ac arcu vel felis lobortis hendrerit et a libero. Duis non arcu ex. Suspendisse tempor lectus ac arcu ultrices, vel semper lorem commodo. Donec faucibus vel turpis in ultrices.
+                </p>
+            </div>
+            <div class="first_container hide">            
+                <img src="https://source.unsplash.com/random/?dark-forest" alt="forest">
+                <p>
+                    first : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices viverra tortor, eu consequat urna porta nec. Duis risus lorem, blandit sed nulla non, consequat porta justo. Nulla feugiat vulputate sagittis. Aliquam vel odio enim. Donec id maximus ante, nec vestibulum urna. Nulla pulvinar iaculis nibh, in vestibulum neque commodo ac. Fusce ac arcu vel felis lobortis hendrerit et a libero. Duis non arcu ex. Suspendisse tempor lectus ac arcu ultrices, vel semper lorem commodo. Donec faucibus vel turpis in ultrices.
+                </p>
+            </div>
+            <div name="second_container_name" class="second_container hide">            
+                <img src="https://source.unsplash.com/random/?dark-stars" alt="stars">
+                <p>
+                    second : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices viverra tortor, eu consequat urna porta nec. Duis risus lorem, blandit sed nulla non, consequat porta justo. Nulla feugiat vulputate sagittis. Aliquam vel odio enim. Donec id maximus ante, nec vestibulum urna. Nulla pulvinar iaculis nibh, in vestibulum neque commodo ac. Fusce ac arcu vel felis lobortis hendrerit et a libero. Duis non arcu ex. Suspendisse tempor lectus ac arcu ultrices, vel semper lorem commodo. Donec faucibus vel turpis in ultrices.
+                </p>
+                
+            </div>
+            <div class="third_container hide">
+                <img src="https://source.unsplash.com/random/?dark-earth" alt="earth">
+                <p>
+                    third : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices viverra tortor, eu consequat urna porta nec. Duis risus lorem, blandit sed nulla non, consequat porta justo. Nulla feugiat vulputate sagittis. Aliquam vel odio enim. Donec id maximus ante, nec vestibulum urna. Nulla pulvinar iaculis nibh, in vestibulum neque commodo ac. Fusce ac arcu vel felis lobortis hendrerit et a libero. Duis non arcu ex. Suspendisse tempor lectus ac arcu ultrices, vel semper lorem commodo. Donec faucibus vel turpis in ultrices.
+                </p>
+            </div>
+            <div class="fourth_container hide">
+                <img src="https://source.unsplash.com/random/?dark-technology" alt="technology">
+                <p>
+                    fourth : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices viverra tortor, eu consequat urna porta nec. Duis risus lorem, blandit sed nulla non, consequat porta justo. Nulla feugiat vulputate sagittis. Aliquam vel odio enim. Donec id maximus ante, nec vestibulum urna. Nulla pulvinar iaculis nibh, in vestibulum neque commodo ac. Fusce ac arcu vel felis lobortis hendrerit et a libero. Duis non arcu ex. Suspendisse tempor lectus ac arcu ultrices, vel semper lorem commodo. Donec faucibus vel turpis in ultrices.
+                </p>
+            </div>
+        </div>
+
+        <div class="intersectionanimation">
+            <h2>Visibility animation using Intersection Observer</h2>
+            <div class="fifth_container hide">
+                <img src="https://source.unsplash.com/random/?dark-painting" alt="art">
+                <p>
+                    fifth : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices viverra tortor, eu consequat urna porta nec. Duis risus lorem, blandit sed nulla non, consequat porta justo. Nulla feugiat vulputate sagittis. Aliquam vel odio enim. Donec id maximus ante, nec vestibulum urna. Nulla pulvinar iaculis nibh, in vestibulum neque commodo ac. Fusce ac arcu vel felis lobortis hendrerit et a libero. Duis non arcu ex. Suspendisse tempor lectus ac arcu ultrices, vel semper lorem commodo. Donec faucibus vel turpis in ultrices.
+                </p>
+            </div>    
+        </div>
+
+
+        <div class="intersectionlazyloading">
+            <h2>Lazy loading using Intersection Observer</h2>
+            <div class="sixth_container hide">            
+                <img data-src="https://source.unsplash.com/random/?dark-forest" alt="forest" class="lazyload">        
+                <p>
+                    sixth : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices viverra tortor, eu consequat urna porta nec. Duis risus lorem, blandit sed nulla non, consequat porta justo. Nulla feugiat vulputate sagittis. Aliquam vel odio enim. Donec id maximus ante, nec vestibulum urna. Nulla pulvinar iaculis nibh, in vestibulum neque commodo ac. Fusce ac arcu vel felis lobortis hendrerit et a libero. Duis non arcu ex. Suspendisse tempor lectus ac arcu ultrices, vel semper lorem commodo. Donec faucibus vel turpis in ultrices.
+                </p>
+            </div>
+        </div>
+
+        <div class="aos">
+            <h2>Aanimate on scroll Library</h2>
+
+            <div data-aos="zoom-out-down" class="seventh_container">
+                
+                <img src="https://source.unsplash.com/random/?dark-stars" alt="stars">
+                <p>
+                    seventh : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices viverra tortor, eu consequat urna porta nec. Duis risus lorem, blandit sed nulla non, consequat porta justo. Nulla feugiat vulputate sagittis. Aliquam vel odio enim. Donec id maximus ante, nec vestibulum urna. Nulla pulvinar iaculis nibh, in vestibulum neque commodo ac. Fusce ac arcu vel felis lobortis hendrerit et a libero. Duis non arcu ex. Suspendisse tempor lectus ac arcu ultrices, vel semper lorem commodo. Donec faucibus vel turpis in ultrices.
+                </p>            
+            </div>
+
+            <div data-aos="flip-right"  class="eighth_container">
+                <img src="https://source.unsplash.com/random/?dark-earth" alt="earth">
+                <p>
+                    eighth : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices viverra tortor, eu consequat urna porta nec. Duis risus lorem, blandit sed nulla non, consequat porta justo. Nulla feugiat vulputate sagittis. Aliquam vel odio enim. Donec id maximus ante, nec vestibulum urna. Nulla pulvinar iaculis nibh, in vestibulum neque commodo ac. Fusce ac arcu vel felis lobortis hendrerit et a libero. Duis non arcu ex. Suspendisse tempor lectus ac arcu ultrices, vel semper lorem commodo. Donec faucibus vel turpis in ultrices.
+                </p>
+            </div>
+    
+        </div>
+     
+      
+    </div>
+
+
+    <script src="./document_object.js"></script>
+    <script src="./dom_selectors.js"></script>
+    <script src="./create_dom_item.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({easing: 'ease-out-back',duration: 1500});
+    </script>
+
+
+</script>
+</body>
+</html>
