@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Movie List</h1>
+        <form id="movie-form">
+            <div>
+                <label>Title</label>
+                <input type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label>Release Year</label>
+                <input type="text" id="releasedate" class="u-full-width">
+            </div>
+            <div>
+                <label>Director</label>
+                <input type="text" id="director" class="u-full-width">
+            </div>
+            <div>
+                <label>Rating</label>
+                <input type="text" id="rating" class="u-full-width">
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="u-full-width">
+            </div>            
+        </form>
+        <table class="u-full-width">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Release Year</th>
+                <th>Director</th>
+                <th>Rating</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="movie-list"></tbody>
+          </table>
+    </div>
+
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
