@@ -19,7 +19,7 @@ function greet() {
 
 
 
-//********* Callback Function Example ***********
+//********* Callback Function Example ***********c:
 
 // if we want 'SayName' function to wait for greet function to finish then
 // we can pass 'SayName' function as callback to greet whihc then internally
