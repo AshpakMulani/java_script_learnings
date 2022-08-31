@@ -22,6 +22,6 @@ https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth
 
 ## Sample demo GIF
 
-![image](./GitProfileFinder.GIF)
+![image](GitProfileFinder.gif)
 
 
