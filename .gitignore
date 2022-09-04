@@ -2,3 +2,4 @@ node_modules
 ~$ync*
 *.tmp
 keys.js
+~$*
