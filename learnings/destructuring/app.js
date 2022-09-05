@@ -37,7 +37,6 @@ const employee = {
     id : 1212
 }
 
-
 let {name, age} = employee;
 
 console.log(name, age);  //->  Ashpak 36
